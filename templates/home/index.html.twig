@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() ~ ' | ' ~'pages.home.title'|trans({}, 'app') }}{% endblock %}
+
+{% block body %}
+    <div class="row mb-2">
+        {{ include('components/cards/_card_post.html.twig') }}
+        {{ include('components/cards/_card_post.html.twig') }}
+    </div>
+
+    <div class="row g-5">
+        <div class="col-md-8">
+            <h3 class="pb-4 mb-4 fst-italic border-bottom">Blogs</h3>
+            {{ include('components/blogs/_short_blog.html.twig') }}
+            {{ include('components/blogs/_short_blog.html.twig') }}
+        </div>
+
+        <div class="col-md-4">
+            {{ include('layouts/_sidebar_about_me.html.twig') }}
+        </div>
+    </div>
+{% endblock %}

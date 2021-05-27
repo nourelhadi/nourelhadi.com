@@ -1,0 +1,10 @@
+meta:
+    description: NOURELHADI Anouar Software developer PHP and Symfony Framework
+    author: NOURELHADI Anouar
+pages:
+    home:
+        title: Home
+
+layout:
+    footer:
+        copyright: Copyright © nranouar | GitHub
