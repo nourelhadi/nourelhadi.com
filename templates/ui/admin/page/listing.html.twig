@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Pages</h1>
+
+    <div class="d-flex flex-row-reverse mt-3 mb-3">
+        <a class="btn btn-success p-2" href="#">Add</a>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">path</th>
+                <th scope="col">actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for page in pages %}
+                <tr>
+                    <th scope="row">{{ page.id }}</th>
+                    <td>{{ page.path }}</td>
+                    <td>@actions</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

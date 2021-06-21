@@ -2,6 +2,12 @@ controllers:
     resource: ../../src/UI/Controller/
     type: annotation
 
+admin_controllers:
+    resource: ../../src/UI/Admin/Controller/
+    name_prefix: admin_
+    prefix: /admin
+    type: annotation
+
 kernel:
     resource: ../../src/Kernel.php
     type: annotation

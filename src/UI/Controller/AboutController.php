@@ -6,11 +6,11 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Twig\Environment;
 
-class HomeController
+class AboutController
 {
-    #[Route(path: '/', name: 'app_home')]
+    #[Route(path: '/about', name: 'app_about')]
     public function __invoke(Environment $twig): Response
     {
-        return new Response($twig->render('ui/home/index.html.twig'));
+        return new Response($twig->render('ui/about/index.html.twig'));
     }
 }
